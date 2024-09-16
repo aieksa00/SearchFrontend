@@ -1,0 +1,157 @@
+.searchForm {
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.lineContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    row-gap: 0.125rem;
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+.groupContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.inputContainer {
+    position: relative;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+input,
+.label .text {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+}
+
+.label .text {
+    transition: all 0.15s ease-out;
+    color: grey;
+}
+
+input:focus + .label .text,
+:not(input[value='']) + .label .text {
+    font-size: 12px;
+    transform: translate(0, -150%);
+    background-color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+input:focus + .label .text {
+    color: black;
+}
+
+input[type='number'] {
+    width: 96px;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    appearance: none;
+    /* Remove default arrow */
+    color: gray;
+}
+
+.errorLabel {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    color: red;
+}
+
+.break {
+    flex-basis: 100%;
+    width: 100%;
+    break-before: always;
+    /* Add this to break before the element */
+    /* OR */
+    /* break-after: always; // Use this to break after the element */
+}
+
+.selectContainer {
+    position: relative;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.selectContainer select {
+    width: 100%;
+    padding: 8px 16px;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    appearance: none;
+    /* Remove default arrow */
+    color: gray;
+}
+
+.selectContainer select:focus {
+    border-color: black;
+    color: black;
+    outline: none;
+}
+
+.selectContainer .label {
+    position: absolute;
+    left: 16px;
+    padding: 0 4px;
+    font-size: 12px;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.15s ease-out;
+}
+
+.selectContainer select:focus + .label .text,
+:not(select[value='']) + .label {
+    color: black;
+}
+
+.phraseContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+    
+}
+
+.phraseContainer .label {
+    position: relative;
+    left: 0px;
+    padding: 0 2px;
+    transition: all 0.15s ease-out;
+    color: grey;
+}
+
+.phraseContainer input[type='checkbox'] {
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.phraseContainer  input[type='checkbox']:focus + .label {
+    color: grey;
+}

@@ -1,0 +1,62 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "types": ["node", "../global.d.ts"],
+    "baseUrl": ".",
+    "paths": {
+      "@sep-frontend/features/search/contracts-view/container": [
+        "libs/features/search/contracts-view/container/src/index.ts"
+      ],
+      "@sep-frontend/features/search/contracts-view/data-access": [
+        "libs/features/search/contracts-view/data-access/src/index.ts"
+      ],
+      "@sep-frontend/features/search/laws-view/container": [
+        "libs/features/search/laws-view/container/src/index.ts"
+      ],
+      "@sep-frontend/features/search/laws-view/data-access": [
+        "libs/features/search/laws-view/data-access/src/index.ts"
+      ],
+      "@sep-frontend/features/search/navigation-bar/container": [
+        "libs/features/search/navigation-bar/container/src/index.ts"
+      ],
+      "@sep-frontend/features/search/search-bar/container": [
+        "libs/features/search/search-bar/container/src/index.ts"
+      ],
+      "@sep-frontend/features/search/search-bar/data-access": [
+        "libs/features/search/search-bar/data-access/src/index.ts"
+      ],
+      "@sep-frontend/features/search/upload-file/container": [
+        "libs/features/search/upload-file/container/src/index.ts"
+      ],
+      "@sep-frontend/features/search/upload-file/data-access": [
+        "libs/features/search/upload-file/data-access/src/index.ts"
+      ],
+      "@sep-frontend/features/shared/login/container": [
+        "libs/features/shared/login/container/src/index.ts"
+      ],
+      "@sep-frontend/features/shared/login/data-access": [
+        "libs/features/shared/login/data-access/src/index.ts"
+      ],
+      "@sep-frontend/features/shared/register/container": [
+        "libs/features/shared/register/container/src/index.ts"
+      ],
+      "@sep-frontend/features/shared/register/data-access": [
+        "libs/features/shared/register/data-access/src/index.ts"
+      ],
+      "@sep-frontend/models": ["libs/models/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

@@ -1,0 +1,58 @@
+.navbar {
+    width: vw;
+    height: 5rem;
+    background-color: #212121;
+    display: flex;
+    justify-content: flex-start;
+    padding-inline: 2rem;
+    z-index: 100;
+}
+
+.logo {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    gap: 0.5rem;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo button {
+    width: auto;
+    height: auto;
+    background-color: #212121;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.links {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links button {
+    width: fit-content;
+    min-width: 5rem;
+    height: 70%;
+    background-color: #212121;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.links button:hover {
+    background-color: #424242;
+}

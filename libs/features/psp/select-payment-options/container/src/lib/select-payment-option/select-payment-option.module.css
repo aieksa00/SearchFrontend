@@ -1,0 +1,15 @@
+.paymentOptionGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 650px) {
+    .paymentOptionGrid {
+        grid-template-columns: 1fr;
+    }
+}
